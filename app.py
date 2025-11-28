@@ -29,10 +29,9 @@ def handle_task(job_input: str) -> str:
 if __name__ == "__main__":
     config = AgentConfig(
         agent_id="crypto-teacher-agent",
-        receiver_address="3CN56NWQTVBOBMOY7AKDI6WN5BWYEH5G23BUPMUVGSDTGOMYVMRCWGJ3ZU",
+        receiver_address="",
         price_microalgos=1_000_000,
-        agent_token="teacher_agent_token_003",
-        remote_server_url="http://localhost:3000/api/agent/access",
-        app_id=749702255,
+        agent_token="",
+        app_id=,
     )
     AgentServer(config=config, handler=handle_task).run(host="0.0.0.0", port=8002)
