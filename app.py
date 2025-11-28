@@ -29,9 +29,9 @@ def handle_task(job_input: str) -> str:
 if __name__ == "__main__":
     config = AgentConfig(
         agent_id="crypto-teacher-agent",
-        receiver_address="EPKAQE2HX5NE3GD3FB64TRTZHIBQUH4MEUSODO3J4I7OPSNURNZ65VN6KE",
+        receiver_address="N23JKUAKIO6NCWMPMAJU2W6LVJPYE5H7ESI3MP76TUMJPAPE7SWCWACC4A",
         price_microalgos=1_000_000,
-        agent_token="242fddac0b26429c8b0ab87b9c51e2b3f5c637958449d79327e694b60595fc96",
-        app_id=750359769,
+        agent_token="47783ea062ffe9a5474abb0ae1ebf9670f01a25ade04e9cfe9b4aa0c316600e4",
+        app_id=750370293,
     )
     AgentServer(config=config, handler=handle_task).run(host="0.0.0.0", port=8002)
